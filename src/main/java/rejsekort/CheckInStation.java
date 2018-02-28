@@ -3,12 +3,15 @@ package rejsekort;
 public class CheckInStation {
 	String name;
 
-	public String getName() {
-		return name;
+	public CheckInStation(String name) {
+		super();
+		this.name = name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public ResponseObject checkIn(TravelCard card) {
+		card.setCheckStatus(true);
+		ResponseObject object = new ResponseObject(100, "Check-in successfully");
+		return object;
 	}
 	
 }
