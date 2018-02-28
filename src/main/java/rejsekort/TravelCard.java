@@ -2,19 +2,23 @@ package rejsekort;
 
 public class TravelCard {
 	int balance;
-	boolean checkStatus;
+	boolean checkedIn;
 	
 	public TravelCard() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public boolean getCheckStatus() {
-		return checkStatus;
+
+	public boolean isCheckedIn() {
+		return checkedIn;
 	}
 
-	public void setCheckStatus(boolean checkStatus) {
-		this.checkStatus = checkStatus;
+
+	public void setCheckedIn(boolean checkedIn) {
+		this.checkedIn = checkedIn;
 	}
+
+
 
 	public int getBalance() {
 		return balance;

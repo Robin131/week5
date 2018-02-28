@@ -1,5 +1,6 @@
 package rejsekort;
 
+
 import static org.junit.Assert.assertEquals;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -16,12 +17,12 @@ public class StepDefiniton {
 	    card.setBalance(balance);
 	}
 
-	@Given("^check-in status is false$")
+	@Given("^check-in status is (true|false)$")
 	public void check_in_status_is_false(boolean isCheckedIn){
-		card.setCheckStatus(isCheckedIn);
+		card.setCheckedIn(isCheckedIn);
 	}
 
-	@Given("^a check-in automation at 'Norreport St'$")
+	@Given("^a check-in automation at \"([^\"]*)\"$")
 	public void a_check_in_automation_at_Norreport_St(String name){
 		checkInStation = new CheckInStation(name);
 	}

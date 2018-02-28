@@ -9,7 +9,7 @@ public class CheckInStation {
 	}
 
 	public ResponseObject checkIn(TravelCard card) {
-		card.setCheckStatus(true);
+		card.setCheckedIn(true);
 		ResponseObject object = new ResponseObject(100, "Check-in successfully");
 		return object;
 	}

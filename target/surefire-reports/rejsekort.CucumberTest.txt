@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: rejsekort.CucumberTest
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 14, Time elapsed: 0.418 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0.401 sec

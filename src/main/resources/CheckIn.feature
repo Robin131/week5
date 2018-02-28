@@ -23,7 +23,7 @@ Feature: Checking in with travel card
   Scenario: Successfully check-in
     Given A travel card with a balance of 100
     And check-in status is false
-    And a check-in automation at 'Norreport St' 
+    And a check-in automation at "Norreport St"
     When check-in
     Then automation displays message that the card is checked-in
 
